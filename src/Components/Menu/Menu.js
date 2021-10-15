@@ -130,19 +130,19 @@ class Menu extends Component {
         toValue: height,
         duration: animationDuration,
         easing,
-        useNativeDriver: true
+        useNativeDriver: true,
       }),
       Animated.timing(this.state.menuWidth, {
         toValue: width,
         duration: animationDuration,
         easing,
-        useNativeDriver: true
+        useNativeDriver: true,
       }),
       Animated.timing(this.state.opacity, {
         toValue: opacity,
         duration: animationDuration,
         easing,
-        useNativeDriver: true
+        useNativeDriver: true,
       }),
     ]).start();
   }

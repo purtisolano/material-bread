@@ -35,10 +35,9 @@ class ContainedButton extends Component {
     if (Platform.OS === 'android') {
       const elevation = active ? 8 : 2;
       Animated.timing(this.state.elevation, {
-        useNativeDriver: true,
         toValue: elevation,
         duration: animationDuration,
-        useNativeDriver: true
+        useNativeDriver: true,
       });
     } else {
       const {
@@ -67,12 +66,12 @@ class ContainedButton extends Component {
         Animated.timing(animatedShadowHeight, {
           toValue: shadowHeight,
           duration: animationDuration,
-          useNativeDriver: true
+          useNativeDriver: true,
         }),
         Animated.timing(animatedShadowWidth, {
           toValue: shadowWidth,
           duration: animationDuration,
-          useNativeDriver: true
+          useNativeDriver: true,
         }),
       ]).start();
     }
