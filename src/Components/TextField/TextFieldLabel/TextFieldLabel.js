@@ -112,11 +112,13 @@ class TextFieldLabel extends Component {
         toValue: position,
         duration: animationDuration,
         easing: animationEasing,
+        useNativeDriver: true
       }),
       Animated.timing(fontSizeAnimation, {
         toValue: fontVal,
         duration: animationDuration,
         easing: animationEasing,
+        useNativeDriver: true
       }),
     ]).start();
   }
@@ -147,11 +149,13 @@ class TextFieldLabel extends Component {
         toValue: position,
         duration: animationDuration,
         easing: animationEasing,
+        useNativeDriver: true
       }),
       Animated.timing(fontSizeAnimation, {
         toValue: fontVal,
         duration: animationDuration,
         easing: animationEasing,
+        useNativeDriver: true
       }),
     ]).start();
   }

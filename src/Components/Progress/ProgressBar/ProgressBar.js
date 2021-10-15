@@ -69,10 +69,12 @@ class ProgressBar extends PureComponent {
       Animated.timing(trackScaleY, {
         toValue: scale,
         duration: 300,
+        useNativeDriver: true
       }),
       Animated.timing(trackOpacity, {
         toValue: opacity,
         duration: 300,
+        useNativeDriver: true
       }),
     ]).start(() => {
       if (determinate) {
@@ -93,6 +95,7 @@ class ProgressBar extends PureComponent {
       Animated.timing(indicatorWidth, {
         toValue: trackWidth * (value / 100),
         duration: animationDuration,
+        useNativeDriver: true
       }),
     ]).start();
   }

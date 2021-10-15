@@ -38,6 +38,7 @@ class ContainedButton extends Component {
         useNativeDriver: true,
         toValue: elevation,
         duration: animationDuration,
+        useNativeDriver: true
       });
     } else {
       const {
@@ -66,10 +67,12 @@ class ContainedButton extends Component {
         Animated.timing(animatedShadowHeight, {
           toValue: shadowHeight,
           duration: animationDuration,
+          useNativeDriver: true
         }),
         Animated.timing(animatedShadowWidth, {
           toValue: shadowWidth,
           duration: animationDuration,
+          useNativeDriver: true
         }),
       ]).start();
     }

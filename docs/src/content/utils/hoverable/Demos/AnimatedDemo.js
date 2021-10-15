@@ -16,6 +16,7 @@ export const code = `class Demo extends React.Component {
       Animated.timing(this.state.rotate, {
         toValue: value,
         duration: 500,
+        useNativeDriver: true
       }).start();
     }
   
