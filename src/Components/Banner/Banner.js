@@ -73,6 +73,7 @@ class Banner extends Component {
     Animated.parallel([
       Animated.spring(this.state.height, {
         toValue: newHeight,
+        useNativeDriver: true,
       }),
     ]).start();
   }
